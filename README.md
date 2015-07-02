@@ -1,10 +1,8 @@
-# Torch (easy) install
+# Torch (easy) install for ppc64
 
 This is just an easy install script for Torch7.
 
-# For those new, please use the instructions from our website to install torch: http://torch.ch/docs/getting-started.html#_
-
-The goal of this script is to enable one line installs. To install Torch on any machine, just do:
+The goal of this script is to enable one line installs. To install Torch on a ppc64 machine, just do:
 
 ```bash
 curl -s https://raw.githubusercontent.com/fabioperez/ezinstall/ppc64/install-all | bash
@@ -18,9 +16,7 @@ luajit -ltorch
 th -lparallel -loptim -lpl -limage
 ```
 
-This script has been tested on MacOS X 10.8, Ubuntu 12.04 and Fedora 20. It should work on earlier Ubuntus and MacOS Xs, but other platforms are not supported.
-
-On Ubuntu and Fedora you'll need 'sudo' privileges, as the default install is global, and the script needs to install dependencies.
+This script has been tested on Debian 8.1 (installed in a POWER8 machine). You'll need 'sudo' privileges, as the default install is global, and the script needs to install dependencies.
 
 If you've already installed the dependencies, and don't have root privileges, you can use this command to just install Torch:
 
@@ -41,7 +37,7 @@ luarocks search lua-cjson
 luarocks install lua-cjson
 ```
 
-By default, luarocks includes a link to our own Rocks repository, hosted [here](https://github.com/torch/rocks). If you wish to publish your packages as rocks for Torch, simply clone this repo, add your rocks, and make a pull request on Github!
+By default, luarocks includes a link to torch's Rocks repository, hosted [here](https://github.com/torch/rocks). If you wish to publish your packages as rocks for Torch, simply clone this repo, add your rocks, and make a pull request on Github!
 
 ## Updating from a previous version
 Note that if you are coming from a previous version you are advise to clean up the old installation with the following command
