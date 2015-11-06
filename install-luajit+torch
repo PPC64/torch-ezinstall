@@ -24,7 +24,7 @@ echo "Installing Torch into: $PREFIX"
 
 # Build and install Torch7
 cd /tmp
-git clone https://github.com/fabioperez/luajit-rocks.git
+git clone https://github.com/PPC64/luajit-rocks.git
 cd luajit-rocks
 mkdir build; cd build
 git checkout master; git pull

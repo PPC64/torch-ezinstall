@@ -52,8 +52,8 @@ function INFO()
 }
 
 
-DEPS_URL="https://raw.githubusercontent.com/${_GITHUB_USER:-fabioperez}/ezinstall/${_GITHUB_BRANCH:-ppc64}/install-deps"
-TORCH_URL="https://raw.githubusercontent.com/${_GITHUB_USER:-fabioperez}/ezinstall/${_GITHUB_BRANCH:-ppc64}/install-luajit+torch"
+DEPS_URL="https://raw.githubusercontent.com/${_GITHUB_USER:-PPC64}/torch-ezinstall/${_GITHUB_BRANCH:-ppc64}/install-deps"
+TORCH_URL="https://raw.githubusercontent.com/${_GITHUB_USER:-PPC64}/torch-ezinstall/${_GITHUB_BRANCH:-ppc64}/install-luajit+torch"
 
 INFO "Preparing to install dependencies..."
 
